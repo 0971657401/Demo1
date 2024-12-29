@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #88bfa8;
+        color: white;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+
+      .banner {
+        text-align: center;
+        padding: 20px;
+        background-color: #e8f5e9;
+      }
+
+      .banner img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .product-section {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .product-item {
+        flex: 1 1 calc(33.333% - 20px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        overflow: hidden;
+        background: white;
+        text-align: center;
+      }
+
+      .product-item img {
+        width: 100%;
+        height: auto;
+      }
+
+      .product-item h3 {
+        font-size: 1.5rem;
+        margin: 15px 0 10px;
+      }
+
+      .product-item p {
+        font-size: 1rem;
+        margin: 0 15px 15px;
+      }
+
+      .cta-section {
+        text-align: center;
+        background-color: #88bfa8;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px auto;
+        max-width: 1200px;
+      }
+
+      .cta-section h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+
+      .cta-section button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: white;
+        background-color: #006400;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-section button:hover {
+        background-color: #004d00;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #88bfa8;
+        color: white;
+      }
+
+      footer p {
+        margin: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column; /* Sắp xếp theo cột */
+        min-height: 100vh; /* Đảm bảo chiều cao toàn màn hình */
+        background-color: #f4f4f9;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 20px 100px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      header .logo img {
+        height: 50px;
+      }
+
+      header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+      }
+
+      header nav ul li {
+        margin: 0;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      header nav ul li a:hover {
+        background-color: #008000;
+        color: #ffffff;
+      }
+      footer {
+        background-color: #ffffff;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .footer-logo img {
+        width: 100px;
+        margin-bottom: 10px;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 15px;
+      }
+
+      .footer-links a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: #05c364;
+      }
+
+      .footer-social a {
+        margin: 0 5px;
+        color: #ffffff;
+        font-size: 18px;
+        transition: color 0.3s;
+      }
+
+      .footer-social a:hover {
+        color: #00cc66;
+      }
+
+      .footer-text {
+        font-size: 14px;
+        margin-top: 10px;
+        color: #cccccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="iconlogo.png" alt="Berger Hut Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html" target="_self">Liên hệ</a></li>
+
+          <li>
+            <a href="thanhphan.html" target="_self">Thành phần</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <img src="hero-background1.jpg" alt="Velvet Mint Banner" />
+    </section>
+
+    <section class="product-section">
+      <div class="product-item">
+        <img src="sp2.png" alt="Hình ảnh sản phẩm 1" />
+        <h3>Thiết kế bao bì</h3>
+        <p>Hộp giấy thân thiện môi trường, gọn gàng và tiện lợi.</p>
+      </div>
+      <div class="product-item">
+        <img src="sp1.png" alt="Hình ảnh sản phẩm 2" />
+        <h3>Sản phẩm chính</h3>
+        <p>Chai thủy tinh tái sử dụng, thiết kế sang trọng, hiện đại.</p>
+      </div>
+      <div class="product-item">
+        <img src="sp1.png" alt="Hình ảnh sản phẩm 3" />
+        <h3>Thông tin sản phẩm</h3>
+        <p>Dung tích 150ml - Sử dụng an toàn cho mọi loại da.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="iconlogo.png" alt="Logo" />
+        </div>
+        <nav class="footer-links">
+          <a href="#">Trang chủ</a>
+          <a href="#">Danh sách sản phẩm</a>
+          <a href="#">Thành phần</a>
+          <a href="#">Liên hệ</a>
+        </nav>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p class="footer-text">&copy; 2024 THUP. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
